@@ -42,7 +42,23 @@ for (var imin = 0; imin <= 4; imin++){
 //create an array called weaponChest with a Mace, Sorcerer's Stone and Excalibur
 var weaponChest = ["Mace", "Sorcerer's Stone", "Excalibur"]
 //create an object called hero with a wizard named Merlin, weapon set to any item from the chest and power of 30
-
+var hero = {
+  wizard : "Merlin",
+  weapon : weaponChest[2],
+  power : 30,
+}
 //create a function with one parameter
+function wow (a){
+  if (hero.weapon == "Sorcerer's Stone"){
+    console.log (hero.wizard + " shall slay the dragon with the " + hero.weapon);
+  }
+  else{
+    console.log (hero.wizard + " is ready for war with the " + hero.weapon);
+  }
+}
+wow (hero.weapon);
 //create a conditional to see if Merlin has the Sorcerer's Stone
-//If Merlion does not have the Sorcerer's Stone, set 
+//console log wizard "Shall slay the dragon with the" weapon
+
+//If Merlin does not have the Sorcerer's Stone, set .
+//Console log Wizard "is ready for war with the weapon"
